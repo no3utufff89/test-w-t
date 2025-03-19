@@ -10,13 +10,18 @@
         column-gap: 28px;
         background-color: #fff;
         border-radius: 6px;
+        border: 1px solid transparent;
     }
 }
 .list-row {
     padding: 16px 24px;
+
     transition: 0.2s ease-in-out;
     &:hover {
-        background-color: rgb(241, 241, 241);
+        border: 1px solid #9bcffd;
+        .trip-col__value_colored::after {
+            opacity: 0;
+        }
     }
     &__col {
         display: flex;
@@ -28,12 +33,6 @@
     }
 }
 .trip-col {
-    & > a {
-        transition: 0.2s ease-in-out;
-        &:hover {
-            color: #02080e;
-        }
-    }
     &__title {
         color: #84919a;
         font-size: 12px;
@@ -55,6 +54,18 @@
 
         &_colored {
             color: $accent_color;
+            position: relative;
+            max-width: max-content;
+            &::after {
+                position: absolute;
+                content: '';
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: 1px;
+                background-color: #4094f7;
+                opacity: 0.2;
+            }
         }
         &_link {
             background-color: #eef0f2;
@@ -65,6 +76,11 @@
             color: #5b6871;
             font-size: 12px;
             line-height: 16px;
+            transition: 0.2s ease-in-out;
+            &:hover {
+                background-color: #4094f7;
+                color: #fff;
+            }
         }
         &_fixed {
             max-width: 562px;

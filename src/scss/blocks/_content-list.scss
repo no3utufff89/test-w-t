@@ -14,6 +14,10 @@
 }
 .list-row {
     padding: 16px 24px;
+    transition: 0.2s ease-in-out;
+    &:hover {
+        background-color: rgb(241, 241, 241);
+    }
     &__col {
         display: flex;
         flex-direction: column;
@@ -24,6 +28,12 @@
     }
 }
 .trip-col {
+    & > a {
+        transition: 0.2s ease-in-out;
+        &:hover {
+            color: #02080e;
+        }
+    }
     &__title {
         color: #84919a;
         font-size: 12px;
@@ -42,6 +52,7 @@
         color: #252c32;
         font-size: 14px;
         line-height: 24px;
+
         &_colored {
             color: $accent_color;
         }

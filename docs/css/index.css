@@ -381,6 +381,11 @@ iframe {
     max-width: -moz-max-content;
     max-width: max-content;
     justify-self: end;
+    transition: 0.2s ease-in-out;
+}
+
+.header__title:hover {
+    color: #4094f7;
 }
 
 .header__title::after {
@@ -417,6 +422,11 @@ iframe {
 .user-controls__user-name {
     color: #4094f7;
     line-height: 24px;
+    transition: 0.2s ease-in-out;
+}
+
+.user-controls__user-name:hover {
+    color: #0461db;
 }
 
 .user-controls__logout {
@@ -426,6 +436,11 @@ iframe {
     background-size: cover;
     width: 16px;
     height: 16px;
+    transition: 0.2s ease-in-out;
+}
+
+.user-controls__logout:hover {
+    transform: scale(1.4);
 }
 
 .nav-section {
@@ -472,6 +487,11 @@ iframe {
     justify-content: space-between;
     border-radius: 4px;
     padding-inline: 8px;
+    transition: 0.2s ease-in-out;
+}
+
+.nav-section__add-btn:hover {
+    background-color: #303940;
 }
 
 .nav-section__add-btn::before {
@@ -511,6 +531,7 @@ iframe {
     -moz-column-gap: 8px;
     column-gap: 8px;
     margin-left: auto;
+    cursor: pointer;
 }
 
 .filter__custom-checkbox {
@@ -588,6 +609,11 @@ iframe {
     column-gap: 4px;
     width: 101px;
     height: 16px;
+    transition: 0.2s ease-in-out;
+}
+
+.filter__clear-btn:hover {
+    color: #303940;
 }
 
 .filter__clear-btn::before {
@@ -669,6 +695,11 @@ input[type='text']::-webkit-search-cancel-button {
 
 .list-row {
     padding: 16px 24px;
+    transition: 0.2s ease-in-out;
+}
+
+.list-row:hover {
+    background-color: rgb(241, 241, 241);
 }
 
 .list-row__col {
@@ -679,6 +710,14 @@ input[type='text']::-webkit-search-cancel-button {
 
 .list-row__col_grow {
     flex-grow: 1;
+}
+
+.trip-col > a {
+    transition: 0.2s ease-in-out;
+}
+
+.trip-col > a:hover {
+    color: #02080e;
 }
 
 .trip-col__title {
@@ -775,7 +814,7 @@ input[type='text']::-webkit-search-cancel-button {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-image: url(../img/icons/arrow_icon.svg);
+    background-image: url(../../img/icons/arrow_icon.svg);
 }
 
 .trip-col__helper > p {

@@ -16,6 +16,10 @@
         position: relative;
         max-width: max-content;
         justify-self: end;
+        transition: 0.2s ease-in-out;
+        &:hover {
+            color: $accent_color;
+        }
         &::after {
             position: absolute;
             bottom: 1px;
@@ -47,6 +51,10 @@
     &__user-name {
         color: $accent_color;
         line-height: 24px;
+        transition: 0.2s ease-in-out;
+        &:hover {
+            color: #0461db;
+        }
     }
     &__logout {
         background-repeat: no-repeat;
@@ -55,5 +63,9 @@
         background-size: cover;
         width: 16px;
         height: 16px;
+        transition: 0.2s ease-in-out;
+        &:hover {
+            transform: scale(1.4);
+        }
     }
 }

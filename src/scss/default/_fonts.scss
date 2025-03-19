@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local('Inter'),
+        /* Если не получилось, загрузит woff2 */ url('../assets/fonts/Inter-400.woff2')
+            format('woff2');
+}
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local('Inter'),
+        /* Если не получилось, загрузит woff2 */ url('../assets/fonts/Inter-600.woff2')
+            format('woff2');
+}
+@font-face {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local('Manrope'),
+        /* Если не получилось, загрузит woff2 */ url('../assets/fonts/Manrope-500.woff2')
+            format('woff2');
+}
+

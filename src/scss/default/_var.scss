@@ -1,0 +1,30 @@
+//default colours
+$black: #252C32;
+$white: #fff;
+$bg_color: #F6FCFF;
+$accent_color: #4094F7;
+
+//layout colours
+
+//Media queries
+$tablet: 600px;
+$laptop: 900px;
+$desktop: 1300px;
+
+@mixin tablet {
+    @media (min-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (min-width: #{$laptop}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}

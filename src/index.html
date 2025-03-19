@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/index.css" />
+        <title>My Trips</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__row">
+                    <a href="#" class="header__title">Поездки</a>
+                    <div class="header__controls user-controls">
+                        <a href="" class="user-controls__user-name"> Заболоцкий К.О </a>
+                        <button class="btn user-controls__logout" aria-label="logout"></button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="section nav-section">
+                <div class="nav-section__header">
+                    <div class="container">
+                        <div class="nav-section__row">
+                            <p class="section__title nav-section__title">Мои поездки</p>
+                            <button class="btn nav-section__add-btn">Оформить поездку</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="nav-section__row filter">
+                        <div class="filter__period">
+                            <label for="trip-date-start"
+                                >Период с:
+                                <input
+                                    class="filter__date-start-input"
+                                    type="text"
+                                    id="trip-date-start"
+                                    name="trip-date-start"
+                                    placeholder="Выбрать"
+                                    onfocus="(this.type='date')"
+                                    onblur="(this.type='text')"
+                                />
+                            </label>
+
+                            <label for="trip-date-end"
+                                >по:
+                                <input
+                                    class="filter__date-end-input"
+                                    type="date"
+                                    id="trip-date-end"
+                                    name="trip-date-end"
+                                    onfocus="(this.type='date')"
+                                    onblur="(this.type='text')"
+                                />
+                            </label>
+                        </div>
+                        <form action="#" class="filter__form search-form">
+                            <input
+                                type="search"
+                                class="search-form__input"
+                                placeholder="Поиск..."
+                            />
+                            <button class="btn search-form__btn" aria-label="search"></button>
+                        </form>
+                        <button class="btn filter__clear-btn" aria-label="clear all fields">
+                            Сбросить все
+                        </button>
+                        <label class="filter__checkbox">
+                            <input class="filter__custom-checkbox" type="checkbox" />
+                            Показать архивные поездки
+                        </label>
+                    </div>
+                </div>
+            </section>
+            <section class="section content-section">
+                <div class="container">
+                    <ul class="content-list">
+                        <li class="content-list__row list-row">
+                            <div class="list-row__col trip-col">
+                                <p class="trip-col__title">№ поездки</p>
+                                <span class="trip-col__value trip-col__value_colored"> 000115</span>
+                            </div>
+                            <div class="list-row__col trip-col">
+                                <p class="trip-col__title">Дата поездки</p>
+                                <span class="trip-col__value"> 22.02.2024 - 27.02.2024</span>
+                            </div>
+                            <div class="list-row__col trip-col">
+                                <p class="trip-col__title trip-col__title_right">Сумма, план</p>
+                                <span class="trip-col__value">29 400,00</span>
+                            </div>
+                            <div class="list-row__col trip-col">
+                                <p class="trip-col__title trip-col__title_right">Сумма, факт</p>
+                                <span class="trip-col__value">29 400,00</span>
+                            </div>
+                            <div class="list-row__col trip-col list-row__col_grow">
+                                <p class="trip-col__title">Город</p>
+                                <span class="trip-col__value"
+                                    >Москва, Ярославль, Ижевск, Владимир</span
+                                >
+                            </div>
+                            <div class="list-row__col trip-col">
+                                <p class="trip-col__title trip-col__title_center">Статус</p>
+                                <!-- Тут не совсем понятно из макета,что должно быть.Ссылка на скачку доков или может модалка или может это такой статус просто текстовый -->
+                                <a href="#" class="trip-col__value trip-col__value_link"
+                                    >Документы</a
+                                >
+                            </div>
+                        </li>
+                        <li class="content-list__row list-row">
+                            <div class="list-row__col trip-col">
+                                <p class="trip-col__title">№ поездки</p>
+                                <span class="trip-col__value trip-col__value_colored"> 000115</span>
+                            </div>
+                            <div class="list-row__col trip-col">
+                                <p class="trip-col__title">Дата поездки</p>
+                                <span class="trip-col__value"> 22.02.2024 - 27.02.2024</span>
+                            </div>
+                            <div class="list-row__col trip-col">
+                                <p class="trip-col__title trip-col__title_right">Сумма, план</p>
+                                <span class="trip-col__value">29 400,00</span>
+                            </div>
+                            <div class="list-row__col trip-col">
+                                <p class="trip-col__title trip-col__title_right">Сумма, факт</p>
+                                <span class="trip-col__value">29 400,00</span>
+                            </div>
+                            <div class="list-row__col trip-col list-row__col_grow">
+                                <p class="trip-col__title">Город</p>
+                                <span class="trip-col__value"
+                                    >Москва, Ярославль, Ижевск, Владимир</span
+                                >
+                            </div>
+                            <div class="list-row__col trip-col">
+                                <p class="trip-col__title trip-col__title_center">Статус</p>
+                                <!-- Тут не совсем понятно из макета,что должно быть.Ссылка на скачку доков или может модалка или может это такой статус просто текстовый -->
+                                <a href="#" class="trip-col__value trip-col__value_link"
+                                    >Документы</a
+                                >
+                            </div>
+                        </li>
+                        <li class="content-list__row list-row">
+                            <div class="list-row__col trip-col">
+                                <p class="trip-col__title">№ поездки</p>
+                                <span class="trip-col__value trip-col__value_colored"> 000115</span>
+                            </div>
+                            <div class="list-row__col trip-col">
+                                <p class="trip-col__title">Дата поездки</p>
+                                <span class="trip-col__value"> 22.02.2024 - 27.02.2024</span>
+                            </div>
+                            <div class="list-row__col trip-col">
+                                <p class="trip-col__title trip-col__title_right">Сумма, план</p>
+                                <span class="trip-col__value">29 400,00</span>
+                            </div>
+                            <div class="list-row__col trip-col">
+                                <p class="trip-col__title trip-col__title_right">Сумма, факт</p>
+                                <span class="trip-col__value">29 400,00</span>
+                            </div>
+                            <div class="list-row__col trip-col list-row__col_grow">
+                                <p class="trip-col__title">Город</p>
+                                <span class="trip-col__value">Москва</span>
+                            </div>
+                            <div class="list-row__col trip-col">
+                                <p class="trip-col__title trip-col__title_center">Статус</p>
+                                <!-- Тут не совсем понятно из макета,что должно быть.Ссылка на скачку доков или может модалка или может это такой статус просто текстовый -->
+                                <a href="#" class="trip-col__value trip-col__value_link"
+                                    >Документы</a
+                                >
+                            </div>
+                        </li>
+                        <li class="content-list__row list-row">
+                            <div class="list-row__col trip-col">
+                                <p class="trip-col__title">№ поездки</p>
+                                <span class="trip-col__value trip-col__value_colored"> 000115</span>
+                            </div>
+                            <div class="list-row__col trip-col">
+                                <p class="trip-col__title">Дата поездки</p>
+                                <span class="trip-col__value"> 22.02.2024 - 27.02.2024</span>
+                            </div>
+                            <div class="list-row__col trip-col">
+                                <p class="trip-col__title trip-col__title_right">Сумма, план</p>
+                                <span class="trip-col__value">29 400,00</span>
+                            </div>
+                            <div class="list-row__col trip-col">
+                                <p class="trip-col__title trip-col__title_right">Сумма, факт</p>
+                                <span class="trip-col__value">29 400,00</span>
+                            </div>
+                            <div class="list-row__col trip-col list-row__col_grow">
+                                <p class="trip-col__title">Город</p>
+                                <div class="trip-col__wrapper">
+                                    <span class="trip-col__value trip-col__value_fixed"
+                                        >Кременчуг-Константиновское, Петропавловск-Камчатский,
+                                        Новосибирск, Волгоград</span
+                                    >
+                                    <span class="trip-col__info-sticker"></span>
+                                    <div class="trip-col__helper">
+                                        <p>
+                                            Кременчуг-Константиновское, Петропавловск-Камчатский,
+                                            Новосибирск, Волгоград, Саратов
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-row__col trip-col">
+                                <p class="trip-col__title trip-col__title_center">Статус</p>
+                                <!-- Тут не совсем понятно из макета,что должно быть.Ссылка на скачку доков или может модалка или может это такой статус просто текстовый -->
+                                <a href="#" class="trip-col__value trip-col__value_link"
+                                    >Документы</a
+                                >
+                            </div>
+                        </li>
+                        <li class="content-list__row list-row">
+                            <div class="list-row__col trip-col">
+                                <p class="trip-col__title">№ поездки</p>
+                                <span class="trip-col__value trip-col__value_colored"> 000115</span>
+                            </div>
+                            <div class="list-row__col trip-col">
+                                <p class="trip-col__title">Дата поездки</p>
+                                <span class="trip-col__value"> 22.02.2024 - 27.02.2024</span>
+                            </div>
+                            <div class="list-row__col trip-col">
+                                <p class="trip-col__title trip-col__title_right">Сумма, план</p>
+                                <span class="trip-col__value">29 400,00</span>
+                            </div>
+                            <div class="list-row__col trip-col">
+                                <p class="trip-col__title trip-col__title_right">Сумма, факт</p>
+                                <span class="trip-col__value">29 400,00</span>
+                            </div>
+                            <div class="list-row__col trip-col list-row__col_grow">
+                                <p class="trip-col__title">Город</p>
+                                <span class="trip-col__value"
+                                    >Москва, Ярославль, Ижевск, Владимир</span
+                                >
+                            </div>
+                            <div class="list-row__col trip-col">
+                                <p class="trip-col__title trip-col__title_center">Статус</p>
+                                <!-- Тут не совсем понятно из макета,что должно быть.Ссылка на скачку доков или может модалка или может это такой статус просто текстовый -->
+                                <a href="#" class="trip-col__value trip-col__value_link"
+                                    >Документы</a
+                                >
+                            </div>
+                        </li>
+                        <li class="content-list__row list-row">
+                            <div class="list-row__col trip-col">
+                                <p class="trip-col__title">№ поездки</p>
+                                <span class="trip-col__value trip-col__value_colored"> 000115</span>
+                            </div>
+                            <div class="list-row__col trip-col">
+                                <p class="trip-col__title">Дата поездки</p>
+                                <span class="trip-col__value"> 22.02.2024 - 27.02.2024</span>
+                            </div>
+                            <div class="list-row__col trip-col">
+                                <p class="trip-col__title trip-col__title_right">Сумма, план</p>
+                                <span class="trip-col__value">29 400,00</span>
+                            </div>
+                            <div class="list-row__col trip-col">
+                                <p class="trip-col__title trip-col__title_right">Сумма, факт</p>
+                                <span class="trip-col__value">29 400,00</span>
+                            </div>
+                            <div class="list-row__col trip-col list-row__col_grow">
+                                <p class="trip-col__title">Город</p>
+                                <span class="trip-col__value"
+                                    >Москва, Ярославль, Ижевск, Владимир</span
+                                >
+                            </div>
+                            <div class="list-row__col trip-col">
+                                <p class="trip-col__title trip-col__title_center">Статус</p>
+                                <!-- Тут не совсем понятно из макета,что должно быть.Ссылка на скачку доков или может модалка или может это такой статус просто текстовый -->
+                                <a href="#" class="trip-col__value trip-col__value_link"
+                                    >Документы</a
+                                >
+                            </div>
+                        </li>
+                        <li class="content-list__row list-row">
+                            <div class="list-row__col trip-col">
+                                <p class="trip-col__title">№ поездки</p>
+                                <span class="trip-col__value trip-col__value_colored"> 000115</span>
+                            </div>
+                            <div class="list-row__col trip-col">
+                                <p class="trip-col__title">Дата поездки</p>
+                                <span class="trip-col__value"> 22.02.2024 - 27.02.2024</span>
+                            </div>
+                            <div class="list-row__col trip-col">
+                                <p class="trip-col__title trip-col__title_right">Сумма, план</p>
+                                <span class="trip-col__value">29 400,00</span>
+                            </div>
+                            <div class="list-row__col trip-col">
+                                <p class="trip-col__title trip-col__title_right">Сумма, факт</p>
+                                <span class="trip-col__value">29 400,00</span>
+                            </div>
+                            <div class="list-row__col trip-col list-row__col_grow">
+                                <p class="trip-col__title">Город</p>
+                                <span class="trip-col__value"
+                                    >Москва, Ярославль, Ижевск, Владимир</span
+                                >
+                            </div>
+                            <div class="list-row__col trip-col">
+                                <p class="trip-col__title trip-col__title_center">Статус</p>
+                                <!-- Тут не совсем понятно из макета,что должно быть.Ссылка на скачку доков или может модалка или может это такой статус просто текстовый -->
+                                <a href="#" class="trip-col__value trip-col__value_link"
+                                    >Документы</a
+                                >
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

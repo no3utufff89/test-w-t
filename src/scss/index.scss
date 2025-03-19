@@ -1,0 +1,9 @@
+//defaults
+@import 'default/var';
+@import 'default/fonts';
+@import 'default/normalize';
+@import 'default/default';
+//blocks
+@import 'blocks/header.scss';
+@import 'blocks/nav-section.scss';
+@import 'blocks/content-list.scss';
